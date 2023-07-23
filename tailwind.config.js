@@ -12,6 +12,7 @@ module.exports = {
     fontFamily: {
       sans: ["Open Sans", "sans-serif"],
       headings: ["Audiowide", "serif"],
+      awsome: "'Font Awesome 6 free'",
     },
 
     extend: {

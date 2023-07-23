@@ -253,13 +253,13 @@ a, span {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
   width: max-content;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   font-size: clamp(2rem, 1.67rem + 1.78vw, 3rem);
-  font-weight: 600;
+  font-weight: 700;
   position: relative;
 }
 
@@ -546,6 +546,10 @@ a, span {
   height: 100%;
 }
 
+.max-h-20 {
+  max-height: 5rem;
+}
+
 .max-h-60 {
   max-height: 15rem;
 }
@@ -581,6 +585,10 @@ a, span {
 
 .max-w-3xl {
   max-width: 48rem;
+}
+
+.max-w-\[70\%\] {
+  max-width: 70%;
 }
 
 .max-w-\[87\.5rem\] {
@@ -736,6 +744,16 @@ a, span {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-slate-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+}
+
+.bg-slate-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-tr {
   background-image: linear-gradient(to top right, var(--tw-gradient-stops));
 }
@@ -841,6 +859,10 @@ a, span {
 
 .pb-5 {
   padding-bottom: 1.25rem;
+}
+
+.pb-8to24 {
+  padding-bottom: clamp(2rem, .67rem + 7.11vw, 6rem);
 }
 
 .pt-6 {
@@ -1030,10 +1052,26 @@ a, span {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.after\:font-awsome:after {
+  content: var(--tw-content);
+  font-family: "Font Awesome 6 free";
+}
+
 .after\:text-base:after {
   content: var(--tw-content);
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.after\:text-xl:after {
+  content: var(--tw-content);
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.after\:font-black:after {
+  content: var(--tw-content);
+  font-weight: 900;
 }
 
 .after\:font-bold:after {
@@ -1041,10 +1079,26 @@ a, span {
   font-weight: 700;
 }
 
+.after\:text-black:after {
+  content: var(--tw-content);
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .after\:text-white:after {
   content: var(--tw-content);
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.after\:content-\[\'\\f100\'\]:after {
+  --tw-content: "";
+  content: var(--tw-content);
+}
+
+.after\:content-\[\'\\f101\'\]:after {
+  --tw-content: "";
+  content: var(--tw-content);
 }
 
 .after\:content-\[\'next\'\]:after {
@@ -1085,6 +1139,10 @@ a, span {
 .hover\:text-\[hsl\(355\,94\%\,82\%\)\]:hover {
   --tw-text-opacity: 1;
   color: hsl(355 94% 82% / var(--tw-text-opacity));
+}
+
+.hover\:opacity-70:hover {
+  opacity: .7;
 }
 
 .hover\:backdrop-brightness-90:hover {
@@ -1175,6 +1233,19 @@ a, span {
   }
 }
 
+@media (width >= 56.25em) {
+  .lg\:px-3to5 {
+    padding-left: clamp(.75rem, .59rem + .89vw, 1.25rem);
+    padding-right: clamp(.75rem, .59rem + .89vw, 1.25rem);
+  }
+
+  .lg\:after\:text-2xl:after {
+    content: var(--tw-content);
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
 @media (width >= 75em) {
   .xl\:mb-0 {
     margin-bottom: 0;
@@ -1186,6 +1257,10 @@ a, span {
 
   .xl\:h-12 {
     height: 3rem;
+  }
+
+  .xl\:max-h-40 {
+    max-height: 10rem;
   }
 
   .xl\:max-h-80 {
@@ -1206,6 +1281,12 @@ a, span {
 
   .xl\:gap-8 {
     gap: 2rem;
+  }
+
+  .xl\:after\:text-3xl:after {
+    content: var(--tw-content);
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .xl\:after\:text-xl:after {

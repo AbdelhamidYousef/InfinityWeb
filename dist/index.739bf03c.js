@@ -580,9 +580,9 @@ var _swiper = require("swiper");
 var _swiperDefault = parcelHelpers.interopDefault(_swiper);
 var _heroJs = require("./views/hero.js");
 var _ourpassionJs = require("./views/ourpassion.js");
-var _projectsJs = require("./views/projects.js"); /* Projects Swiper*/  ////////////////////
+var _swipersJs = require("./views/swipers.js");
 
-},{"swiper":"iM6UL","./views/hero.js":"7z33p","./views/ourpassion.js":"eYHbp","./views/projects.js":"h3y14","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"iM6UL":[function(require,module,exports) {
+},{"swiper":"iM6UL","./views/hero.js":"7z33p","./views/ourpassion.js":"eYHbp","./views/swipers.js":"cMrGm","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"iM6UL":[function(require,module,exports) {
 /**
  * Swiper 10.0.4
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -4902,8 +4902,9 @@ function counting(el) {
     }, 1000 / goal);
 }
 
-},{}],"h3y14":[function(require,module,exports) {
-const options = {
+},{}],"cMrGm":[function(require,module,exports) {
+// Projects Swiper
+const projectsOptions = {
     // slidesPerView
     breakpoints: {
         500: {
@@ -4938,10 +4939,10 @@ const options = {
     speed: 1000,
     loop: true,
     // Autoplay
-    // autoplay: {
-    //   delay: 1000,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction: false
+    },
     // Navigation
     grabCursor: true,
     mousewheel: true,
@@ -4957,7 +4958,45 @@ const options = {
 [
     "#website-swiper",
     "#webapps-swiper"
-].forEach((el)=>new Swiper(el, options));
+].forEach((el)=>new Swiper(el, projectsOptions));
+// Clients Swiper
+const clientsOptions = {
+    // slidesPerView
+    breakpoints: {
+        500: {
+            slidesPerView: 2
+        },
+        900: {
+            slidesPerView: 3
+        },
+        1400: {
+            slidesPerView: 4
+        },
+        1800: {
+            slidesPerView: 5
+        }
+    },
+    // Scrolling Parameters
+    speed: 1000,
+    loop: true,
+    // Autoplay
+    autoplay: {
+        delay: 1000,
+        disableOnInteraction: false
+    },
+    // Navigation
+    grabCursor: true,
+    mousewheel: true,
+    keyboard: {
+        enabled: true,
+        onlyInViewport: true
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+    }
+};
+new Swiper("#clients-swiper", clientsOptions);
 
 },{}]},["j9r0q","ebWYT"], "ebWYT", "parcelRequire3fa8")
 
