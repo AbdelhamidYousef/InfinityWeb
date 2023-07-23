@@ -457,6 +457,10 @@ a, span {
   z-index: 10;
 }
 
+.z-50 {
+  z-index: 50;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -500,6 +504,10 @@ a, span {
 
 .mb-\[12vh\] {
   margin-bottom: 12vh;
+}
+
+.mb-\[6px\] {
+  margin-bottom: 6px;
 }
 
 .ml-2 {
@@ -560,10 +568,6 @@ a, span {
 
 .h-full {
   height: 100%;
-}
-
-.h-\[1\.5px\] {
-  height: 1.5px;
 }
 
 .max-h-20 {
@@ -707,20 +711,12 @@ a, span {
   justify-items: center;
 }
 
-.gap-1 {
-  gap: .25rem;
-}
-
 .gap-8 {
   gap: 2rem;
 }
 
 .gap-\[6px\] {
   gap: 6px;
-}
-
-.gap-\[5px\] {
-  gap: 5px;
 }
 
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
@@ -869,13 +865,14 @@ a, span {
   padding: .75rem;
 }
 
-.p-3to9 {
-  padding: clamp(.75rem, .25rem + 2.67vw, 2.25rem);
-}
-
 .px-3to5 {
   padding-left: clamp(.75rem, .59rem + .89vw, 1.25rem);
   padding-right: clamp(.75rem, .59rem + .89vw, 1.25rem);
+}
+
+.px-3to9 {
+  padding-left: clamp(.75rem, .25rem + 2.67vw, 2.25rem);
+  padding-right: clamp(.75rem, .25rem + 2.67vw, 2.25rem);
 }
 
 .px-4 {
@@ -911,11 +908,6 @@ a, span {
 .py-8to24 {
   padding-top: clamp(2rem, .67rem + 7.11vw, 6rem);
   padding-bottom: clamp(2rem, .67rem + 7.11vw, 6rem);
-}
-
-.px-3to9 {
-  padding-left: clamp(.75rem, .25rem + 2.67vw, 2.25rem);
-  padding-right: clamp(.75rem, .25rem + 2.67vw, 2.25rem);
 }
 
 .pb-10 {
@@ -1090,12 +1082,6 @@ a, span {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.shadow-xl {
-  --tw-shadow: 0 20px 25px -5px #0000001a, 0 8px 10px -6px #0000001a;
-  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
 .backdrop-blur-lg {
   --tw-backdrop-blur: blur(16px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
@@ -1166,11 +1152,6 @@ a, span {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.backdrop\:blur-sm::backdrop {
-  --tw-blur: blur(4px);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
 .after\:font-awsome:after {
   content: var(--tw-content);
   font-family: "Font Awesome 6 free";
@@ -1230,6 +1211,12 @@ a, span {
   content: var(--tw-content);
 }
 
+.hover\:scale-\[100\]:hover {
+  --tw-scale-x: 100;
+  --tw-scale-y: 100;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .hover\:bg-\[\#444\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(68 68 68 / var(--tw-bg-opacity));
@@ -1270,12 +1257,38 @@ a, span {
   backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
+.group:hover .group-hover\:-mb-px {
+  margin-bottom: -1px;
+}
+
+.group:hover .group-hover\:-mt-px {
+  margin-top: -1px;
+}
+
+.group:hover .group-hover\:mb-0 {
+  margin-bottom: 0;
+}
+
+.group:hover .group-hover\:hidden {
+  display: none;
+}
+
 .group:hover .group-hover\:w-full {
   width: 100%;
 }
 
 .group\/btn:hover .group-hover\/btn\:translate-x-1, .group:hover .group-hover\:translate-x-1 {
   --tw-translate-x: .25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.group:hover .group-hover\:-rotate-45 {
+  --tw-rotate: -45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.group:hover .group-hover\:rotate-45 {
+  --tw-rotate: 45deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1374,6 +1387,10 @@ a, span {
     margin-bottom: 0;
   }
 
+  .xl\:mb-2 {
+    margin-bottom: .5rem;
+  }
+
   .xl\:mb-8 {
     margin-bottom: 2rem;
   }
@@ -1384,10 +1401,6 @@ a, span {
 
   .xl\:h-12 {
     height: 3rem;
-  }
-
-  .xl\:h-20 {
-    height: 5rem;
   }
 
   .xl\:h-\[4\.5rem\] {
@@ -1406,24 +1419,16 @@ a, span {
     width: 3rem;
   }
 
-  .xl\:w-52 {
-    width: 13rem;
-  }
-
   .xl\:w-36 {
     width: 9rem;
   }
 
-  .xl\:w-20 {
-    width: 5rem;
+  .xl\:w-52 {
+    width: 13rem;
   }
 
-  .xl\:w-\[2rem\] {
+  .xl\:w-8 {
     width: 2rem;
-  }
-
-  .xl\:w-\[1\.8rem\] {
-    width: 1.8rem;
   }
 
   .xl\:w-\[4\.5rem\] {
@@ -1440,10 +1445,6 @@ a, span {
 
   .xl\:gap-8 {
     gap: 2rem;
-  }
-
-  .xl\:gap-\[7px\] {
-    gap: 7px;
   }
 
   .xl\:pb-5 {

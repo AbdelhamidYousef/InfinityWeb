@@ -52,10 +52,10 @@
     class="bg-white font-sans font-normal text-14to16 text-slate-500 selection:bg-[#fe809e] selection:text-white"
   >
     <header
-      class="absolute left-0 top-0 w-full z-10 px-3to9 py-4 flex justify-between items-center"
+      class="absolute left-0 top-0 w-full z-10 px-3to9 py-4 flex justify-between items-center pointer-events-none"
     >
       <!-- Logo -->
-      <a href="#" class="rounded-full pointer-events-auto">
+      <a href="#" class="pointer-events-auto">
         <img
           src="./img/logo.png"
           alt="Logo"
@@ -64,13 +64,31 @@
       </a>
 
       <!-- Menu -->
-      <button
-        class="w-14 h-14 xl:w-[4.5rem] xl:h-[4.5rem] bg-[#3333] rounded-full grid place-content-center gap-[5px] xl:gap-[7px]"
-      >
-        <span class="block w-6 xl:w-[1.8rem] h-[2px] bg-white">&nbsp; </span>
-        <span class="block w-6 xl:w-[1.8rem] h-[2px] bg-white">&nbsp; </span>
-        <span class="block w-6 xl:w-[1.8rem] h-[2px] bg-white">&nbsp; </span>
-      </button>
+      <div class="relative">
+        <!-- Menu Button -->
+        <button
+          class="w-14 h-14 xl:w-[4.5rem] xl:h-[4.5rem] rounded-full bg-[#3333] flex flex-col justify-center items-center pointer-events-auto group/btn"
+        >
+          <span
+            class="block w-6 xl:w-8 h-[2px] bg-white mb-[6px] xl:mb-2 transition-all duration-300 group-hover:-mb-px group-hover:rotate-45"
+            >&nbsp;
+          </span>
+          <span
+            class="block w-6 xl:w-8 h-[2px] bg-white mb-[6px] xl:mb-2 transition-all duration-300 group-hover:hidden"
+            >&nbsp;
+          </span>
+          <span
+            class="block w-6 xl:w-8 h-[2px] bg-white transition-all duration-300 group-hover:mb-0 group-hover:-mt-px group-hover:-rotate-45"
+            >&nbsp;
+          </span>
+        </button>
+
+        <!-- Menu Overlay -->
+        <!-- <div
+          class="absolute left-0 top-0 w-14 h-14 rounded-full transition-all duration-700 hover:scale-[100] z-50"
+          style="background-image: radial-gradient(#7ed56f, #28b485)"
+        ></div> -->
+      </div>
     </header>
 
     <main>
