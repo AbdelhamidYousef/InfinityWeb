@@ -52,10 +52,10 @@
     class="bg-white font-sans font-normal text-14to16 text-slate-500 selection:bg-[#fe809e] selection:text-white"
   >
     <header
-      class="absolute left-0 top-0 w-full z-10 px-3to9 py-4 flex justify-between items-center pointer-events-none"
+      class="absolute left-0 top-0 w-full px-3to9 py-4 flex justify-between items-center pointer-events-none"
     >
       <!-- Logo -->
-      <a href="#" class="pointer-events-auto">
+      <a href="#" class="z-10 pointer-events-auto">
         <img
           src="./img/logo.png"
           alt="Logo"
@@ -64,21 +64,22 @@
       </a>
 
       <!-- Menu -->
-      <div class="relative">
+      <div class="relative z-10 group" id="menu-container">
         <!-- Menu Button -->
         <button
-          class="w-14 h-14 xl:w-[4.5rem] xl:h-[4.5rem] rounded-full bg-[#3333] flex flex-col justify-center items-center pointer-events-auto group/btn"
+          class="w-14 h-14 xl:w-[4.5rem] xl:h-[4.5rem] rounded-full bg-[#3333] flex flex-col justify-center items-center pointer-events-auto group-hover:bg-[#3336]"
+          id="menu-btn"
         >
           <span
-            class="block w-6 xl:w-8 h-[2px] bg-white mb-[6px] xl:mb-2 transition-all duration-300 group-hover:-mb-px group-hover:rotate-45"
+            class="block w-6 xl:w-8 h-[2px] bg-white mb-[6px] xl:mb-2 transition-all duration-300 relative"
             >&nbsp;
           </span>
           <span
-            class="block w-6 xl:w-8 h-[2px] bg-white mb-[6px] xl:mb-2 transition-all duration-300 group-hover:hidden"
+            class="block w-6 xl:w-8 h-[2px] bg-white mb-[6px] xl:mb-2 transition-all duration-300"
             >&nbsp;
           </span>
           <span
-            class="block w-6 xl:w-8 h-[2px] bg-white transition-all duration-300 group-hover:mb-0 group-hover:-mt-px group-hover:-rotate-45"
+            class="block w-6 xl:w-8 h-[2px] bg-white transition-all duration-300 relative"
             >&nbsp;
           </span>
         </button>
@@ -160,13 +161,13 @@
           >
             <a
               href="#contact"
-              class="btn--bordered font-bold text-lg text-white z-10 md:ml-2 backdrop-blur-lg duration-100 hover:backdrop-brightness-90"
+              class="btn--bordered font-bold text-lg text-white z-0 md:ml-2 backdrop-blur-lg duration-100 hover:backdrop-brightness-90"
             >
               Start A Project
             </a>
             <a
               href="#projects"
-              class="btn--text text-white z-10 group flex items-center gap-[6px] md:gap-0"
+              class="btn--text text-white z-0 group flex items-center gap-[6px] md:gap-0"
             >
               <span>View Our Work</span>
               <span

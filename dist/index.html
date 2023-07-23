@@ -27,21 +27,21 @@
   </head>
 
   <body class="bg-white font-sans font-normal text-14to16 text-slate-500 selection:bg-[#fe809e] selection:text-white">
-    <header class="absolute left-0 top-0 w-full z-10 px-3to9 py-4 flex justify-between items-center pointer-events-none">
+    <header class="absolute left-0 top-0 w-full px-3to9 py-4 flex justify-between items-center pointer-events-none">
       <!-- Logo -->
-      <a href="#" class="pointer-events-auto">
+      <a href="#" class="z-10 pointer-events-auto">
         <img src="/logo.726d37a8.png" alt="Logo" class="w-28 xl:w-36 backdrop-blur-sm">
       </a>
 
       <!-- Menu -->
-      <div class="relative">
+      <div class="relative z-10 group" id="menu-container">
         <!-- Menu Button -->
-        <button class="w-14 h-14 xl:w-[4.5rem] xl:h-[4.5rem] rounded-full bg-[#3333] flex flex-col justify-center items-center pointer-events-auto group/btn">
-          <span class="block w-6 xl:w-8 h-[2px] bg-white mb-[6px] xl:mb-2 transition-all duration-300 group-hover:-mb-px group-hover:rotate-45">&nbsp;
+        <button class="w-14 h-14 xl:w-[4.5rem] xl:h-[4.5rem] rounded-full bg-[#3333] flex flex-col justify-center items-center pointer-events-auto group-hover:bg-[#3336]" id="menu-btn">
+          <span class="block w-6 xl:w-8 h-[2px] bg-white mb-[6px] xl:mb-2 transition-all duration-300 relative">&nbsp;
           </span>
-          <span class="block w-6 xl:w-8 h-[2px] bg-white mb-[6px] xl:mb-2 transition-all duration-300 group-hover:hidden">&nbsp;
+          <span class="block w-6 xl:w-8 h-[2px] bg-white mb-[6px] xl:mb-2 transition-all duration-300">&nbsp;
           </span>
-          <span class="block w-6 xl:w-8 h-[2px] bg-white transition-all duration-300 group-hover:mb-0 group-hover:-mt-px group-hover:-rotate-45">&nbsp;
+          <span class="block w-6 xl:w-8 h-[2px] bg-white transition-all duration-300 relative">&nbsp;
           </span>
         </button>
 
@@ -88,10 +88,10 @@
 
           <!-- Hero Buttons -->
           <div class="mt-8 flex flex-col-reverse gap-8 items-center md:flex-row md:gap-12">
-            <a href="#contact" class="btn--bordered font-bold text-lg text-white z-10 md:ml-2 backdrop-blur-lg duration-100 hover:backdrop-brightness-90">
+            <a href="#contact" class="btn--bordered font-bold text-lg text-white z-0 md:ml-2 backdrop-blur-lg duration-100 hover:backdrop-brightness-90">
               Start A Project
             </a>
-            <a href="#projects" class="btn--text text-white z-10 group flex items-center gap-[6px] md:gap-0">
+            <a href="#projects" class="btn--text text-white z-0 group flex items-center gap-[6px] md:gap-0">
               <span>View Our Work</span>
               <span class="relative top-px transition-all duration-300 group-hover:translate-x-1 md:opacity-0 md:group-hover:translate-x-2 md:group-hover:opacity-100">
                 <i class="fa-solid fa-angles-right"></i>

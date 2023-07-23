@@ -78,3 +78,15 @@
     box-shadow: 0 0 15px rgb(0 0 0 / 0.1);
   }
 }
+
+@layer utilities {
+  .js-active-menu :first-child {
+    @apply -mb-px rotate-45;
+  }
+  .js-active-menu :nth-child(2) {
+    @apply hidden;
+  }
+  .js-active-menu :last-child {
+    @apply mb-0 -mt-px -rotate-45;
+  }
+}

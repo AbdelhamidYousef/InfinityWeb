@@ -581,8 +581,9 @@ var _swiperDefault = parcelHelpers.interopDefault(_swiper);
 var _heroJs = require("./views/hero.js");
 var _ourpassionJs = require("./views/ourpassion.js");
 var _swipersJs = require("./views/swipers.js");
+var _menuJs = require("./views/menu.js");
 
-},{"swiper":"iM6UL","./views/hero.js":"7z33p","./views/ourpassion.js":"eYHbp","./views/swipers.js":"cMrGm","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"iM6UL":[function(require,module,exports) {
+},{"swiper":"iM6UL","./views/hero.js":"7z33p","./views/ourpassion.js":"eYHbp","./views/swipers.js":"cMrGm","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./views/menu.js":"iv1n6"}],"iM6UL":[function(require,module,exports) {
 /**
  * Swiper 10.0.4
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -4997,6 +4998,12 @@ const clientsOptions = {
     }
 };
 new Swiper("#clients-swiper", clientsOptions);
+
+},{}],"iv1n6":[function(require,module,exports) {
+const menuContainer = document.getElementById("menu-container"), menuBtn = menuContainer.querySelector("#menu-btn");
+menuContainer.addEventListener("click", ()=>{
+    menuBtn.classList.toggle("js-active-menu");
+});
 
 },{}]},["j9r0q","ebWYT"], "ebWYT", "parcelRequire3fa8")
 

@@ -16,7 +16,6 @@ module.exports = {
     },
 
     extend: {
-      zIndex: {},
       padding: {
         "3to5": "clamp(0.75rem, 0.59rem + 0.89vw, 1.25rem)", // 12px at 300vw to 20px at 1200vw // used for padding-x // for general components
         "3to9": "clamp(0.75rem, 0.25rem + 2.67vw, 2.25rem)", // 12px at 300vw to 36px at 1200vw // used for padding-x // for section-container
