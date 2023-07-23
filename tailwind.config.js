@@ -26,6 +26,9 @@ module.exports = {
         "5to15": "clamp(1.25rem, 0.42rem + 4.44vw, 3.75rem)", // 20px at 300vw to 60px at 1200vw // used for margin-bottom // for section-subtitle
         "8to20": "clamp(2rem, 1.44rem + 3vw, 5rem)", // 32px at 300vw to 80px at 1200vw // used for margin-bottom // for section-subtitle
       },
+      borderWidth: {
+        12: "12px",
+      },
       fontSize: {
         "12to14": "clamp(0.75rem, 0.71rem + 0.22vw,0.875rem)", // 12px at 300vw to 14px at 1200vw // used for small text
         "14to16": "clamp(0.875rem, 0.84rem + 0.22vw,1rem)", // 14px at 300vw to 16px at 1200vw // used for main text (used on body)

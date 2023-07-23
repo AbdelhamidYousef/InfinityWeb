@@ -16,6 +16,7 @@
   }
   .sec-title {
     @apply font-semibold text-32to48 text-black mb-4 relative w-max mx-auto px-6 xl:px-8;
+    line-height: 1;
 
     .left-dot {
       @apply w-3 h-3 bg-[#fb6588] rounded-full absolute left-0 top-[53%] -translate-y-1/2;
