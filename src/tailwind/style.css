@@ -11,13 +11,13 @@
 
 @layer components {
   /* Scroll Bar */
-  ::-webkit-scrollbar {
+  html::-webkit-scrollbar {
     @apply w-3 bg-white;
 
     &-thumb {
-      @apply rounded-md bg-[#fa5f6b];
+      @apply rounded-md  bg-[#fe0840] bg-opacity-80;
       &:hover {
-        @apply bg-[#fe809e];
+        @apply bg-opacity-60;
       }
     }
   }
@@ -43,13 +43,13 @@
 
   /* Active Menu*/
   .js-active-menu {
-    .menu-overlay {
+    & > .menu-overlay {
       @apply opacity-100 scale-[100];
     }
-    .menu-nav {
+    & > .menu-nav {
       @apply opacity-100 visible;
     }
-    .menu-btn {
+    & > .menu-btn {
       @apply bg-[#fff6] hover:bg-[#fff4];
 
       :first-child {

@@ -9,6 +9,7 @@ module.exports = {
       xl: "75em", // 1200px
       "2x": "112.5em", // 1800px
     },
+
     fontFamily: {
       sans: ["Open Sans", "sans-serif"],
       heavy: ["Audiowide", "serif"],
@@ -16,6 +17,7 @@ module.exports = {
     },
 
     extend: {
+      colors: {},
       padding: {
         "3to5": "clamp(0.75rem, 0.59rem + 0.89vw, 1.25rem)", // 12px at 300vw to 20px at 1200vw // used for padding-x // for components or section-container
         "3to9": "clamp(0.75rem, 0.25rem + 2.67vw, 2.25rem)", // 12px at 300vw to 36px at 1200vw // used for padding-x // for section-container
