@@ -242,18 +242,18 @@ a, span {
 }
 
 ::-webkit-scrollbar {
-  --tw-border-opacity: 1;
-  border-width: 1px;
-  border-left-color: rgb(254 202 202 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   width: .75rem;
 }
 
 ::-webkit-scrollbar-thumb {
+  border-radius: .375rem;
+}
+
+::-webkit-scrollbar-thumb {
   --tw-bg-opacity: 1;
   background-color: rgb(250 95 107 / var(--tw-bg-opacity));
-  border-radius: .375rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -326,6 +326,43 @@ a, span {
   color: rgb(0 0 0 / var(--tw-text-opacity));
   margin-bottom: clamp(2rem, 1.44rem + 3vw, 5rem);
   font-size: clamp(1rem, .92rem + .44vw, 1.25rem);
+}
+
+.js-active-menu .menu-overlay {
+  --tw-scale-x: 100;
+  --tw-scale-y: 100;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  opacity: 1;
+}
+
+.js-active-menu .menu-nav {
+  visibility: visible;
+  opacity: 1;
+}
+
+.js-active-menu .menu-btn {
+  background-color: #fff6;
+}
+
+.js-active-menu .menu-btn:hover {
+  background-color: #fff4;
+}
+
+.js-active-menu .menu-btn :first-child {
+  --tw-rotate: 45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  margin-bottom: -1px;
+}
+
+.js-active-menu .menu-btn :nth-child(2) {
+  display: none;
+}
+
+.js-active-menu .menu-btn :last-child {
+  --tw-rotate: -45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  margin-top: -1px;
+  margin-bottom: 0;
 }
 
 .btn--bordered {
@@ -1254,43 +1291,6 @@ a, span {
 .menu-link:hover:after {
   content: var(--tw-content);
   width: 100%;
-}
-
-.js-active-menu .menu-overlay {
-  --tw-scale-x: 100;
-  --tw-scale-y: 100;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  opacity: 1;
-}
-
-.js-active-menu .menu-nav {
-  visibility: visible;
-  opacity: 1;
-}
-
-.js-active-menu .menu-btn {
-  background-color: #fff6;
-}
-
-.js-active-menu .menu-btn:hover {
-  background-color: #fff4;
-}
-
-.js-active-menu .menu-btn :first-child {
-  --tw-rotate: 45deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  margin-bottom: -1px;
-}
-
-.js-active-menu .menu-btn :nth-child(2) {
-  display: none;
-}
-
-.js-active-menu .menu-btn :last-child {
-  --tw-rotate: -45deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  margin-top: -1px;
-  margin-bottom: 0;
 }
 
 .selection\:bg-\[\#fe809e\] ::selection {

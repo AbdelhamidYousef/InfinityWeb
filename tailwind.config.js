@@ -11,13 +11,13 @@ module.exports = {
     },
     fontFamily: {
       sans: ["Open Sans", "sans-serif"],
-      headings: ["Audiowide", "serif"],
+      heavy: ["Audiowide", "serif"],
       awsome: "'Font Awesome 6 free'",
     },
 
     extend: {
       padding: {
-        "3to5": "clamp(0.75rem, 0.59rem + 0.89vw, 1.25rem)", // 12px at 300vw to 20px at 1200vw // used for padding-x // for general components
+        "3to5": "clamp(0.75rem, 0.59rem + 0.89vw, 1.25rem)", // 12px at 300vw to 20px at 1200vw // used for padding-x // for components or section-container
         "3to9": "clamp(0.75rem, 0.25rem + 2.67vw, 2.25rem)", // 12px at 300vw to 36px at 1200vw // used for padding-x // for section-container
         "5to15": "clamp(1.25rem, 0.42rem + 4.44vw, 3.75rem)", // 20px at 300vw to 60px at 1200vw // used for padding-y // for small sections
         "8to24": "clamp(2rem, 0.67rem + 7.11vw, 6rem)", // 32px at 300vw to 96px at 1200vw // used for padding-y // for large sections
@@ -40,10 +40,32 @@ module.exports = {
         "32to56": "clamp(2rem, 1.5rem + 2.67vw, 3.5rem)", // 32px at 300vw to 56px at 1200vw // used for main-title (hero title)
       },
       animation: {
+        "move-right": "move-right 0.5s ease-in-out",
+        "move-left": "move-left 0.5s ease-in-out",
         "move-up": "move-up 0.5s ease-in-out",
         "ping-sm": "ping-sm 0.7s ease-in-out infinite",
       },
       keyframes: {
+        "move-right": {
+          "0%": {
+            opacity: "0",
+            transform: "translateX(-10rem)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateX(0)",
+          },
+        },
+        "move-left": {
+          "0%": {
+            opacity: "0",
+            transform: "translateX(10rem)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateX(0)",
+          },
+        },
         "move-up": {
           "0%": {
             opacity: "0",

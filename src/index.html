@@ -40,7 +40,7 @@
     ></script>
 
     <!-- Main CSS & JS -->
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./tailwind/style.css" />
     <script type="module" src="./js/index.js"></script>
 
     <!-- Title & Favicon -->
@@ -53,7 +53,10 @@
   >
     <header>
       <!-- Logo -->
-      <a href="#" class="absolute left-4 lg:left-9 top-4 z-10">
+      <a
+        href="#"
+        class="absolute left-4 lg:left-9 top-4 z-10 animate-move-right"
+      >
         <img
           src="./img/logo.png"
           alt="Logo"
@@ -84,7 +87,7 @@
 
         <!-- Menu Button -->
         <button
-          class="menu-btn w-full h-full rounded-full bg-[#3335] backdrop-blur-md flex flex-col justify-center items-center hover:bg-[#3338]"
+          class="menu-btn w-full h-full rounded-full bg-[#3335] backdrop-blur-md flex flex-col justify-center items-center hover:bg-[#3338] animate-move-left"
         >
           <span
             class="block w-6 xl:w-8 h-[2px] bg-white mb-[6px] xl:mb-2 transition-all duration-300 relative"
@@ -170,7 +173,7 @@
             class="mt-8 flex flex-col-reverse gap-8 items-center md:flex-row md:gap-12"
           >
             <a
-              href="#contact"
+              href="#contacts"
               class="btn--bordered font-bold text-lg text-white z-0 md:ml-2 backdrop-blur-lg duration-100 hover:backdrop-brightness-90"
             >
               Start A Project
@@ -265,7 +268,7 @@
       >
         <div class="sec-container">
           <p
-            class="font-semibold text-24to48 text-white text-center font-headings"
+            class="font-semibold text-24to48 text-white text-center font-heavy"
           >
             Passion Leads To Design, Design Leads To Performance, Performance
             Leads To Success!
@@ -1593,7 +1596,7 @@
         <div class="sec-container">
           <a
             href="#contact"
-            class="font-semibold text-24to48 text-white font-headings transition-colors duration-500 hover:text-[hsl(355,94%,82%)]"
+            class="font-semibold text-24to48 text-white font-heavy transition-colors duration-500 hover:text-[hsl(355,94%,82%)]"
           >
             Get in touch with us!
           </a>
@@ -1799,14 +1802,14 @@
       >
         <div class="sec-container pb-5">
           <!-- Get-connected Header -->
-          <h2 class="sec-title font-headings text-white mb-8to20">
+          <h2 class="sec-title font-heavy text-white mb-8to20">
             Get Connected
             <span class="left-dot !bg-white"></span>
             <span class="right-dot !bg-white"></span>
           </h2>
 
           <!-- Get-connected Body -->
-          <div class="sm-boxes font-headings text-white">
+          <div class="sm-boxes font-heavy text-white">
             <a
               class="flex flex-col space-y-4 items-center transition-colors duration-300 hover:text-[#1877f2]"
               href="#"

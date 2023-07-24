@@ -1,6 +1,5 @@
 // Packages
 import "core-js";
-import Swiper from "swiper";
 
 // Views
 import "./views/hero.js";
