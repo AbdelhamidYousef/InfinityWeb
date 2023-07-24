@@ -717,6 +717,18 @@ a, span {
   resize: both;
 }
 
+.scroll-m-52 {
+  scroll-margin: 13rem;
+}
+
+.scroll-m-\[100\] {
+  scroll-margin: 100px;
+}
+
+.scroll-m-\[100rem\] {
+  scroll-margin: 100rem;
+}
+
 .flex-col {
   flex-direction: column;
 }
