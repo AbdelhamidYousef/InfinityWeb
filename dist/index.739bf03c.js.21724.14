@@ -5000,7 +5000,7 @@ const clientsOptions = {
 new Swiper("#clients-swiper", clientsOptions);
 
 },{}],"iv1n6":[function(require,module,exports) {
-const menuContainer = document.getElementById("menu-container");
+const menuContainer = document.getElementById("menu-container"), menuBtn = menuContainer.querySelector("#menu-btn");
 menuContainer.addEventListener("click", function() {
     this.classList.toggle("js-active-menu");
 });

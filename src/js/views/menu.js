@@ -1,6 +1,5 @@
-const menuContainer = document.getElementById("menu-container"),
-  menuBtn = menuContainer.querySelector("#menu-btn");
+const menuContainer = document.getElementById("menu-container");
 
-menuContainer.addEventListener("click", () => {
-  menuBtn.classList.toggle("js-active-menu");
+menuContainer.addEventListener("click", function () {
+  this.classList.toggle("js-active-menu");
 });

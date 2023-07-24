@@ -51,24 +51,40 @@
   <body
     class="bg-white font-sans font-normal text-14to16 text-slate-500 selection:bg-[#fe809e] selection:text-white"
   >
-    <header
-      class="absolute left-0 top-0 w-full px-3to9 py-4 flex justify-between items-center pointer-events-none"
-    >
+    <header>
       <!-- Logo -->
-      <a href="#" class="z-10 pointer-events-auto">
+      <a href="#" class="absolute left-4 lg:left-9 top-4 z-10">
         <img
           src="./img/logo.png"
           alt="Logo"
-          class="w-28 xl:w-36 backdrop-blur-sm"
+          class="w-28 xl:w-32 backdrop-blur-sm"
         />
       </a>
 
       <!-- Menu -->
-      <div class="relative z-10 group" id="menu-container">
+      <div
+        class="menu-btn group fixed right-4 lg:right-9 top-4 z-50 w-14 h-14 xl:w-[4.5rem] xl:h-[4.5rem]"
+        id="menu-container"
+      >
+        <!-- Menu Overlay -->
+        <div
+          class="menu-overlay absolute right-0 top-0 w-full h-full rounded-full bg-gradient-to-r from-[#0f2027] via-[#203a43] to-[#2c5364] scale-0 transition-transform duration-700"
+        ></div>
+
+        <!-- Menu Nav -->
+        <nav
+          class="menu-nav fixed right-0 top-0 w-full h-screen px-3to5 grid justify-items-center content-center gap-6 lg:gap-10 transition-all duration-700 opacity-0 invisible"
+        >
+          <a href="#" class="menu-link">About Natous</a>
+          <a href="#" class="menu-link">Your benfits</a>
+          <a href="#" class="menu-link">Popular tours</a>
+          <a href="#" class="menu-link">Stories</a>
+          <a href="#" class="menu-link">Book now</a>
+        </nav>
+
         <!-- Menu Button -->
         <button
-          class="w-14 h-14 xl:w-[4.5rem] xl:h-[4.5rem] rounded-full bg-[#3333] flex flex-col justify-center items-center pointer-events-auto group-hover:bg-[#3336]"
-          id="menu-btn"
+          class="menu-btn w-full h-full rounded-full bg-[#3335] backdrop-blur-md flex flex-col justify-center items-center hover:bg-[#3338]"
         >
           <span
             class="block w-6 xl:w-8 h-[2px] bg-white mb-[6px] xl:mb-2 transition-all duration-300 relative"
@@ -83,12 +99,6 @@
             >&nbsp;
           </span>
         </button>
-
-        <!-- Menu Overlay -->
-        <!-- <div
-          class="absolute left-0 top-0 w-14 h-14 rounded-full transition-all duration-700 hover:scale-[100] z-50"
-          style="background-image: radial-gradient(#7ed56f, #28b485)"
-        ></div> -->
       </div>
     </header>
 
