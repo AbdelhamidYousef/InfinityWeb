@@ -241,6 +241,26 @@ a, span {
   --tw-backdrop-sepia: ;
 }
 
+::-webkit-scrollbar {
+  --tw-border-opacity: 1;
+  border-width: 1px;
+  border-left-color: rgb(254 202 202 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  width: .75rem;
+}
+
+::-webkit-scrollbar-thumb {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 95 107 / var(--tw-bg-opacity));
+  border-radius: .375rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 128 158 / var(--tw-bg-opacity));
+}
+
 .sec-container {
   max-width: 80rem;
   margin-left: auto;
@@ -715,18 +735,6 @@ a, span {
 
 .resize {
   resize: both;
-}
-
-.scroll-m-52 {
-  scroll-margin: 13rem;
-}
-
-.scroll-m-\[100\] {
-  scroll-margin: 100px;
-}
-
-.scroll-m-\[100rem\] {
-  scroll-margin: 100rem;
 }
 
 .flex-col {

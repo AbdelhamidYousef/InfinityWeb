@@ -10,6 +10,19 @@
 }
 
 @layer components {
+  /* Scroll Bar */
+  ::-webkit-scrollbar {
+    @apply w-3 bg-white border border-l-red-200;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-md bg-[#fa5f6b];
+
+    &:hover {
+      @apply bg-[#fe809e];
+    }
+  }
+
   /* Main Layout & Typography */
   .sec-container {
     @apply max-w-7xl mx-auto px-3to9;
