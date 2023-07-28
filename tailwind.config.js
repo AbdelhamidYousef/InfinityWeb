@@ -22,12 +22,14 @@ module.exports = {
         "3to5": "clamp(0.75rem, 0.59rem + 0.89vw, 1.25rem)", // 12px at 300vw to 20px at 1200vw // used for padding-x // for components or section-container
         "3to9": "clamp(0.75rem, 0.25rem + 2.67vw, 2.25rem)", // 12px at 300vw to 36px at 1200vw // used for padding-x // for section-container
         "5to15": "clamp(1.25rem, 0.42rem + 4.44vw, 3.75rem)", // 20px at 300vw to 60px at 1200vw // used for padding-y // for small sections
-        "8to24": "clamp(2rem, 0.67rem + 7.11vw, 6rem)", // 32px at 300vw to 96px at 1200vw // used for padding-y // for large sections
+        // "8to24": "clamp(2rem, 0.67rem + 7.11vw, 6rem)", // 32px at 300vw to 96px at 1200vw // used for padding-y // for large sections
+        "12to24": "clamp(3rem, 2rem + 5.33vw, 6rem)", // 48px at 300vw to 96px at 1200vw // used for padding-y // for large sections
         "12to36": "clamp(3rem, 1rem + 10.67vw, 9rem)", // 48px at 300vw to 144px at 1200vw // used for padding-y // for x-large sections
       },
       margin: {
         "5to15": "clamp(1.25rem, 0.42rem + 4.44vw, 3.75rem)", // 20px at 300vw to 60px at 1200vw // used for margin-bottom // for section-subtitle
         "8to20": "clamp(2rem, 1.44rem + 3vw, 5rem)", // 32px at 300vw to 80px at 1200vw // used for margin-bottom // for section-subtitle
+        "12to20": "clamp(3rem, 2.34rem + 3.56vw, 5rem)", // 48px at 300vw to 80px at 1200vw // used for margin-bottom // for section-subtitle
       },
       borderWidth: {
         12: "12px",
