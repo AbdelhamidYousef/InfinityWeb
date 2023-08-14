@@ -56,50 +56,48 @@ const projectsOptions = {
   },
 };
 
-["#website-swiper", "#webapps-swiper"].forEach(
-  (el) => new Swiper(el, projectsOptions)
-);
+new Swiper("#projects-swiper", projectsOptions);
 
 // Clients Swiper
-const clientsOptions = {
-  // slidesPerView
-  breakpoints: {
-    500: {
-      slidesPerView: 2,
-    },
-    900: {
-      slidesPerView: 3,
-    },
-    1400: {
-      slidesPerView: 4,
-    },
-    1800: {
-      slidesPerView: 5,
-    },
-  },
+// const clientsOptions = {
+//   // slidesPerView
+//   breakpoints: {
+//     500: {
+//       slidesPerView: 2,
+//     },
+//     900: {
+//       slidesPerView: 3,
+//     },
+//     1400: {
+//       slidesPerView: 4,
+//     },
+//     1800: {
+//       slidesPerView: 5,
+//     },
+//   },
 
-  // Scrolling Parameters
-  speed: 1000,
-  loop: true,
+//   // Scrolling Parameters
+//   speed: 1000,
+//   loop: true,
 
-  // Autoplay
-  autoplay: {
-    delay: 1000,
-    disableOnInteraction: false,
-  },
+//   // Autoplay
+//   autoplay: {
+//     delay: 1000,
+//     disableOnInteraction: false,
+//   },
 
-  // Navigation
-  grabCursor: true,
-  mousewheel: true,
-  keyboard: {
-    enabled: true,
-    onlyInViewport: true,
-  },
+//   // Navigation
+//   grabCursor: true,
+//   mousewheel: true,
+//   keyboard: {
+//     enabled: true,
+//     onlyInViewport: true,
+//   },
 
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-};
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+// };
 
-new Swiper("#clients-swiper", clientsOptions);
+// new Swiper("#clients-swiper", clientsOptions);
